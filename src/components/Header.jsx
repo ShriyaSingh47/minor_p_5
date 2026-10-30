@@ -1,0 +1,1 @@
+import{Link}from"react-router-dom";import{useSelector}from"react-redux";export default function Header(){const n=useSelector(s=>s.cart.reduce((a,x)=>a+x.quantity,0));return <header><Link className="logo" to="/">ShopEase</Link><nav><Link to="/">Home</Link><Link to="/products">Products</Link><Link to="/cart">Cart ({n})</Link></nav></header>}
